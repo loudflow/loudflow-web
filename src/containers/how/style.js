@@ -2,7 +2,7 @@ const styles = ({ typography }) => ({
   content: {
   },
   banner: {
-    height: `calc(0.2 * 100vw)`,
+    height: `calc(0.15 * 100vw)`,
     backgroundImage: "url('/images/process-machine.png')",
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top center',
