@@ -1,0 +1,24 @@
+
+WHAT
+
+Open source cloud platform for building intelligent worlds.
+
+
+
+WHY
+
+Helping you go from one top many.
+
+Distributed artificial intelligence in all its forms, from swarm intelligence to multi-agent systems.
+
+The huge potential of distributed AI in building solutions for hard-to-solve problems in learning, reasoning, planning, computation and automation has been mostly ignored other than in academic circles. While neural networking and associated approaches have led to major advances in the application of AI to everyday problems, issues such as their dependency on large amounts of data for training, resulting fragile black box solutions which cannot be explained, and more have led to growing recognition of their limits and the need for more diverse approaches. Distributed AI is one such approach whose promise deserves a lot more attention and work in enabling technologies and practical applications than present in the current landscape of AI startups and open source projects.
+
+HOW
+
+
+WHEN
+
+
+WHO
+
+
