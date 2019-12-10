@@ -14,10 +14,10 @@ type Props = {
 
 const Why = ({ classes }: Props) => (
   <Grid container spacing={1} className={classes.content}>
-    <Grid container item direction="column" xs={6}>
+    <Grid container item direction="column" xs={12} md={6}>
       <div className={classes.banner}/>
     </Grid>
-    <Grid container item direction="column" xs={6}>
+    <Grid container item direction="column" xs={12} md={6}>
       <div className={classes.titleContainer}>
         <Typography variant='h2' color='textSecondary'>
           {title1}

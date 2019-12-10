@@ -3,7 +3,7 @@ const styles = ({ typography }) => ({
   },
   banner: {
     height: `calc(0.15 * 100vw)`,
-    minHeight: `${typography.pxToRem(465)}`,
+    minHeight: `${typography.pxToRem(320)}`,
     backgroundImage: "url('/images/process-machine.png')",
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top center',

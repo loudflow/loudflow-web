@@ -14,10 +14,10 @@ type Props = {
 
 const When = ({ classes }: Props) => (
   <Grid container spacing={1} className={classes.content}>
-    <Grid container item direction="column" xs={7}>
+    <Grid container item direction="column" xs={12} md={6}>
       <div className={classes.banner}/>
     </Grid>
-    <Grid container item direction="column" xs={5}>
+    <Grid container item direction="column" xs={12} md={6}>
       <div className={classes.titleContainer}>
         <Typography variant='h2' color='textSecondary'>
           {title1}

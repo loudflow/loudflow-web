@@ -22,7 +22,7 @@ const Header = ({ classes }: Props) => (
       <div className={classes.navigation}>
         <Navigation />
       </div>
-      <Button className={classes.preview} variant="outlined" color="secondary" href="#">
+      <Button className={classes.preview} variant="outlined" color="secondary" href="https://www.loudflow.app">
         {preview}
       </Button>
     </div>
