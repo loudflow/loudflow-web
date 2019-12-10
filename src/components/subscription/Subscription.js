@@ -27,7 +27,7 @@ const Subscription = ({ classes }: Props) => (
       </div>
       <Grid container spacing={1}>
         <Grid container item xs={9}>
-          <TextField fullWidth placeholder="Your email address..." variant="outlined"/>
+          <TextField fullWidth name="email" placeholder="Your email address..." variant="outlined"/>
         </Grid>
         <Grid container item xs={3}>
           <Button fullWidth type="submit" color="secondary" variant="outlined">
