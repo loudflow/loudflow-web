@@ -2,6 +2,7 @@ const styles = ({ typography }) => ({
   content: {
   },
   banner: {
+    maxHeight: '50vh',
     height: `calc(100vh - ${typography.pxToRem(465)})`,
     margin: `${typography.pxToRem(20)}`,
     backgroundImage: "url('/images/production-machine.png')",

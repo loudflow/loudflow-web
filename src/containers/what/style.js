@@ -1,13 +1,14 @@
-const styles = ({ typography }) => ({
+const styles = ({ breakpoints, typography }) => ({
   content: {
   },
   banner: {
+    maxHeight: '50vh',
     height: `calc(100vh - ${typography.pxToRem(465)})`,
     margin: `${typography.pxToRem(20)}`,
     backgroundImage: "url('/images/head-machine.png')",
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top left',
-    backgroundSize: 'contain'
+    backgroundSize: 'contain',
   },
   titleContainer: {
     float: 'right',
