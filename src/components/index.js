@@ -6,7 +6,7 @@ import LinkList from './link-list';
 import Modal from './modal';
 import Navigation from './navigation';
 import SEO from './seo';
-import Updates from './updates';
+import Subscription from './subscription';
 
 export {
   Avatar,
@@ -17,5 +17,5 @@ export {
   Modal,
   Navigation,
   SEO,
-  Updates,
+  Subscription,
 };

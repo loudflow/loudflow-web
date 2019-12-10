@@ -4,7 +4,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Fade from '@material-ui/core/Fade';
 import classNames from 'classnames';
 
-import { Header, Footer, Updates } from 'components';
+import { Header, Footer, Subscription } from 'components';
 
 import styles from './style';
 
@@ -32,7 +32,7 @@ const Layout = ({ classes, children, noBackground }: Props) => (
       <Fade in mountOnEnter unmountOnExit>
         <main className={classes.content}>
           {children}
-          <Updates />
+          <Subscription />
         </main>
       </Fade>
       <Footer />
