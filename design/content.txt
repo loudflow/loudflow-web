@@ -21,4 +21,16 @@ WHEN
 
 WHO
 
+Loudflow is an open source project being built by FarSimple as a playground for learning and trying out ideas in the field of distributed AI. The larger goal is to contribute back to the open source community with a platform which is capable of ...
 
+Don't be a stranger. Say hi!
+FarSimple is a one person company which I started for software development and consulting. Feel free to get in touch with me. I'm always open to discussing new ideas and opportunities.
+
+Helsinki, Finland
+
+info@farsimple.com
+
+Need help?
+help@loudflow.com
+
+Github LinkedIn

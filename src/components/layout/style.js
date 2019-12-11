@@ -7,30 +7,20 @@ const styles = ({ app, breakpoints, typography }) => ({
     },
   },
   container: {
-    minHeight: '100vh',
-  },
-  scrollFix: {
-    marginRight: '-17px !important',
-    marginBottom: '-17px !important',
-  },
-  pageContainer: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     margin: '0 auto',
-    minHeight: '100%',
+    minHeight: '100vh',
     padding: `0 ${typography.pxToRem(48)}`,
     transition: 'filter .5s, opacity .5s',
     boxSizing: 'border-box',
   },
   content: {
+    display: 'flex',
     margin: `${typography.pxToRem(60)} auto 0`,
     maxWidth: app.maxWidth,
     width: '100%',
-  },
-  background: {
-    backgroundImage: ``,
-    backgroundSize: 'cover',
   },
 });
 

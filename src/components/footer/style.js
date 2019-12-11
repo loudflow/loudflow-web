@@ -11,6 +11,14 @@ const styles = ({ app, typography }) => ({
   copyright: {
     flexGrow: 1,
   },
+  privacy: {
+    display: 'flex',
+    flexGrow: 1,
+  },
+  privacyLink: {
+    display: 'flex',
+    alignItems: 'center',
+  },
   source: {
     display: 'flex',
   },

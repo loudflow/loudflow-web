@@ -3,11 +3,11 @@ import React from 'react';
 import { Layout, SEO } from 'components';
 import { Privacy } from 'containers';
 
-const HowPage = () => (
-  <Layout>
-    <SEO title='Privacy' />
+const PrivacyPage = () => (
+  <Layout hideSubscription={true}>
+    <SEO title='Privacy Policy' />
     <Privacy />
   </Layout>
 );
 
-export default HowPage;
+export default PrivacyPage;

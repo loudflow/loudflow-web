@@ -1,11 +1,12 @@
 {
   "name": "loudflow-web",
   "private": true,
-  "description": "Loudflow Web Application",
+  "description": "Loudflow Web Site",
   "version": "0.1.0",
   "author": "FarSimple Oy <info@farsimple.com>",
   "dependencies": {
     "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.5.1",
     "@material-ui/styles": "^4.5.0",
     "classnames": "^2.2.6",
     "gatsby": "^2.15.9",

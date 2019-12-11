@@ -1,43 +1,30 @@
 import React from 'react';
-import { withStyles } from '@material-ui/styles';
-import { Scrollbars } from 'react-custom-scrollbars';
-import Fade from '@material-ui/core/Fade';
-import classNames from 'classnames';
-
+import { ThemeProvider, withStyles } from '@material-ui/styles';
+import {CssBaseline, Hidden} from '@material-ui/core';
 import { Header, Footer, Subscription } from 'components';
-
 import styles from './style';
+import theme from 'styles/theme';
 
 require('typeface-roboto');
 
 type Props = {
   classes: Object,
   children: HTMLElement,
-  noBackground: Boolean,
+  hideSubscription: Boolean,
 };
 
-const Layout = ({ classes, children, noBackground }: Props) => (
-  <Scrollbars
-    autoHide
-    autoHideTimeout={1000}
-    autoHideDuration={200}
-    renderView={props => <div {...props} className={classes.scrollFix} />}
-    className={classes.container}>
-    <div
-      className={classNames(
-        classes.pageContainer,
-        !noBackground && classes.background
-      )}>
+const Layout = ({ classes, children, hideSubscription = false }: Props) => (
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    <div className={classes.container}>
       <Header />
-      <Fade in mountOnEnter unmountOnExit>
         <main className={classes.content}>
           {children}
-          <Subscription />
+          {!hideSubscription && (<Subscription />)}
         </main>
-      </Fade>
       <Footer />
     </div>
-  </Scrollbars>
+  </ThemeProvider>
 );
 
 export default withStyles(styles)(Layout);
