@@ -18,6 +18,8 @@ const styles = ({ app, breakpoints, typography }) => ({
   },
   content: {
     display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
     margin: `${typography.pxToRem(60)} auto 0`,
     maxWidth: app.maxWidth,
     width: '100%',

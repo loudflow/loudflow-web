@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { Layout, SEO } from 'components';
-import { Privacy } from 'containers';
+import { How } from 'containers';
 
 const HowPage = () => (
   <Layout>
-    <SEO title='Privacy' />
-    <Privacy />
+    <SEO title='How' />
+    <How />
   </Layout>
 );
 
