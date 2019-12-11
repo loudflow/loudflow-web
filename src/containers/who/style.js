@@ -22,6 +22,17 @@ const styles = ({ typography }) => ({
     float: 'right',
     marginTop: `${typography.pxToRem(20)}`,
   },
+  icon: {
+    display: 'flex',
+  },
+  iconLink: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  iconIcon: {
+    width: `${typography.pxToRem(24)}`,
+    height: `${typography.pxToRem(24)}`,
+  },
 });
 
 export default styles;
