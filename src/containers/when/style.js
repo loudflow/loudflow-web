@@ -22,6 +22,13 @@ const styles = ({ typography }) => ({
     float: 'right',
     marginTop: `${typography.pxToRem(20)}`,
   },
+  bulletContainer: {
+    minWidth: `${typography.pxToRem(16)}`,
+  },
+  bullet: {
+    width: `${typography.pxToRem(8)}`,
+    height: `${typography.pxToRem(8)}`,
+  },
 });
 
 export default styles;

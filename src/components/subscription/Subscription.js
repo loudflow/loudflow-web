@@ -14,7 +14,7 @@ type Props = {
 const Subscription = ({ classes }: Props) => (
   <div className={classes.container}>
     <Typography variant='h5' color='textSecondary'>
-      We're under construction. Please sign up so we can keep you in the loop.
+       Please sign up so we can keep you updated on our progress.
     </Typography>
     <br/>
     <form name="subscription" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
@@ -31,7 +31,7 @@ const Subscription = ({ classes }: Props) => (
         </Grid>
         <Grid container item xs={3}>
           <Button fullWidth type="submit" color="secondary" variant="outlined">
-            Keep me updated
+            Stay tuned
           </Button>
         </Grid>
       </Grid>
