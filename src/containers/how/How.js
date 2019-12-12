@@ -20,7 +20,7 @@ const How = ({ classes }: Props) => (
     <Grid container item direction="column">
       <div className={classes.titleContainer}>
         <Typography variant='h2' color='textSecondary'>
-          {title1}
+          Agents as microservices.
         </Typography>
         <Typography variant='h2' color='textSecondary'>
           {title2}

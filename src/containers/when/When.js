@@ -24,7 +24,7 @@ const When = ({ classes }: Props) => (
       </div>
       <div className={classes.captionContainer}>
         <Typography variant='h5' color='textPrimary'>
-          Iteratively developing Loudflow.
+          Using an iterative approach <br/> for developing Loudflow.
         </Typography>
       </div>
       <div className={classes.contentContainer}>
