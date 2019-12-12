@@ -24,15 +24,12 @@ const When = ({ classes }: Props) => (
       </div>
       <div className={classes.captionContainer}>
         <Typography variant='h5' color='textPrimary'>
-          Looking forward to a marvelous journey.
+          Iteratively developing Loudflow.
         </Typography>
       </div>
       <div className={classes.contentContainer}>
         <Typography variant='p' color='textPrimary' paragraph>
-          An iterative approach will be used to develop Loudflow, starting with an initial skeleton implementation of the front-end web application and back-end services.
-        </Typography>
-        <Typography variant='p' color='textPrimary' paragraph>
-          Following the initial release, further development will be in iterations which add on to the previous set of features to produce a new enhanced and stable release. These iterative releases will be documented as milestones in the project's Github repository with corresponding list of features and a rough timeline.
+          Starting with an initial skeleton implementation of the front-end web application and back-end services, development will continue in iterations which add on to the previous set of features to produce a new enhanced and stable release. These iterative releases will be documented as milestones here and in the project's Github repository with corresponding list of features and a rough timeline.
         </Typography>
         <Typography variant='p' color='textPrimary' paragraph>
           This approach fits well with the exploratory research and learning goals of the project.
