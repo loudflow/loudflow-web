@@ -24,7 +24,7 @@ const Who = ({ classes }: Props) => (
           Loudflow is an open-source project under construction by FarSimple, a one-person company based in Finland, which I started for software development and consulting.
         </Typography>
         <Typography variant='p' color='textPrimary' paragraph>
-          The main driver behind this project is my strong interest in the development and architecture of both distributed software and multi-agent systems. While serving as a playground for learning and trying out ideas in the field of distributed AI, my larger objective is to continue building Loudflow into a production-ready platform for commercial applications.
+          The main driver behind this project is my strong interest in the development and architecture of both distributed software and artificial intelligence. While serving as a playground for learning and trying out ideas in the field of distributed AI, my larger objective is to continue building Loudflow into a comprehensive cloud-based platform for developing practical applications in this area.
         </Typography>
         <Typography variant='p' color='textSecondary' paragraph>
           Get in touch

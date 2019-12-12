@@ -19,7 +19,7 @@ const When = ({ classes }: Props) => (
           Setting out
         </Typography>
         <Typography variant='h2' color='textSecondary'>
-          for Ithaca
+          on a journey
         </Typography>
       </div>
       <div className={classes.captionContainer}>
@@ -29,10 +29,10 @@ const When = ({ classes }: Props) => (
       </div>
       <div className={classes.contentContainer}>
         <Typography variant='p' color='textPrimary' paragraph>
-          Loudflow is being developed with an iterative approach which will be based on an initial skeleton implementation of both the frontend web application and backend services.
+          An iterative approach will be used to develop Loudflow, starting with an initial skeleton implementation of the front-end web application and back-end services.
         </Typography>
         <Typography variant='p' color='textPrimary' paragraph>
-          Following this initial release, the platform will be further developed in iterations where each iteration will add on to the initial set of features to produce a new enhanced and stable release. Each iteration will be documented as a milestone in the project's Github repository with corresponding list of features and a rough timeline.
+          Following the initial release, further development will be in iterations which add on to the previous set of features to produce a new enhanced and stable release. These iterative releases will be documented as milestones in the project's Github repository with corresponding list of features and a rough timeline.
         </Typography>
         <Typography variant='p' color='textPrimary' paragraph>
           This approach fits well with the exploratory research and learning goals of the project.
@@ -42,20 +42,50 @@ const When = ({ classes }: Props) => (
     <Grid container item direction="column" xs={12}>
       <div className={classes.contentContainer}>
         <Typography variant='p' color='textPrimary' paragraph>
-          Currently, work is continuing on the preliminary skeleton iteration which aims for the following functionality:
+          Currently, the initial skeleton is being built with the following technology stack and features:
         </Typography>
         <List dense disablePadding>
           <ListItem>
             <ListItemIcon className={classes.bulletContainer}>
               <FaCircle className={classes.bullet} />
             </ListItemIcon>
-            <ListItemText primary='...' />
+            <ListItemText primary='Back-end scaffolding using Lagom microservices and event sourcing framework with Scala, Akka, Cassandra and Kafka.' />
           </ListItem>
           <ListItem>
             <ListItemIcon className={classes.bulletContainer}>
               <FaCircle className={classes.bullet} />
             </ListItemIcon>
-            <ListItemText primary='...' />
+            <ListItemText primary='Minimal implementation of Model service with 2D graph representation and basic features including add/remove/move entities (i.e. agents and things), configurable cohabitation behavior (i.e. block, push, kill), etc.' />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon className={classes.bulletContainer}>
+              <FaCircle className={classes.bullet} />
+            </ListItemIcon>
+            <ListItemText primary='Minimal implementation of Agent service with an internal clock, perception via model events, a local memory of the model, and random turn-based action.' />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon className={classes.bulletContainer}>
+              <FaCircle className={classes.bullet} />
+            </ListItemIcon>
+            <ListItemText primary='Minimal implementation of Simulation service with support for an internal clock, initial model population, time-based population growth and decay, etc.' />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon className={classes.bulletContainer}>
+              <FaCircle className={classes.bullet} />
+            </ListItemIcon>
+            <ListItemText primary='Deployment to and integration with AWS using Docker and Kubernetes - possibly EKS via CloudFormation ?. Also IAM integration to support deployment to user accounts.' />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon className={classes.bulletContainer}>
+              <FaCircle className={classes.bullet} />
+            </ListItemIcon>
+            <ListItemText primary='Minimal front-end (user and admin) web applications using React, Gatsby and Netlify.' />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon className={classes.bulletContainer}>
+              <FaCircle className={classes.bullet} />
+            </ListItemIcon>
+            <ListItemText primary='Example application based on the TileWorld testbed (Lees, 2002 - A history of the Tileworld agent testbed).' />
           </ListItem>
         </List>
       </div>
