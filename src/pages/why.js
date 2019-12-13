@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Layout, SEO } from 'components';
-import { Why } from 'containers';
+import { Layout, SEO } from '../components';
+import { Why } from '../containers';
 
 const WhyPage = () => (
   <Layout>

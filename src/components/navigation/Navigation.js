@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import{ withWidth } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
-import withWidth from '@material-ui/core/withWidth';
-
-import { compose, isMobileView } from 'utils';
-
+import styles from './style';
 import MainNavigation from './main';
 import MobileNavigation from './mobile';
-import options from './content';
-import styles from './style';
+import { compose, isMobileView } from '../../utils';
 
-type Props = {
-  classes: Object,
-  width: string,
-};
+const options = [
+  { to: '/', text: 'WHAT' },
+  { to: '/why/', text: 'WHY' },
+  { to: '/how/', text: 'HOW' },
+  { to: '/when/', text: 'WHEN' },
+  { to: '/who/', text: 'WHO' },
+];
 
-const Navigation = ({ classes, width }: Props) => {
+const Navigation = ({ classes, width }) => {
   const [open, setOpen] = useState(false);
-
   return (
     <div className={classes.container}>
       {isMobileView(width) ? (
@@ -30,6 +30,11 @@ const Navigation = ({ classes, width }: Props) => {
       )}
     </div>
   );
+};
+
+Navigation.propTypes = {
+  classes: PropTypes.object.isRequired,
+  width: PropTypes.string
 };
 
 export default compose(

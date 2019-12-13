@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Fade, MaterialModal } from '@material-ui/core';
+import { Fade, Modal as MaterialModal } from '@material-ui/core';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { withStyles } from '@material-ui/styles';
 import styles from './style';

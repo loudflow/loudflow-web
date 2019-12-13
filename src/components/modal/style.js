@@ -1,4 +1,4 @@
-const styles = ({ typography }) => ({
+const styles = () => ({
   scrollContainer: {
     minHeight: '100%',
   },

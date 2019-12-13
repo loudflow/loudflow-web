@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Layout, SEO } from 'components';
-import { What } from 'containers';
+import { Layout, SEO } from '../components';
+import { What } from '../containers';
 
 const IndexPage = () => (
   <Layout>

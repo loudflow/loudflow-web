@@ -1,4 +1,4 @@
-const styles = ({ breakpoints, typography }) => ({
+const styles = ({ typography }) => ({
   content: {
   },
   banner: {

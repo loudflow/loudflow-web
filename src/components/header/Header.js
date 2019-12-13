@@ -1,35 +1,41 @@
-import { Link } from 'gatsby';
 import React from 'react';
-import logo from 'images/logo-title.png';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
-
-import { Navigation } from 'components';
-
 import styles from './style';
-import content from './content';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import { Navigation } from '../../components';
+import logo from '../../images/logo-title.png';
 
-type Props = {
-  classes: Object,
+class Header extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <header className={classes.container}>
+        <div className={classes.navContainer}>
+          <div className={classes.navigation}>
+            <Navigation />
+          </div>
+          <Button className={classes.preview} variant="outlined" color="secondary" href="https://www.loudflow.app">
+            PREVIEW
+          </Button>
+        </div>
+        <Link to='/' className={classes.brand}>
+          <img src={logo} className={classes.logo} alt='logo' />
+        </Link>
+      </header>
+    );
+  }
+
+}
+
+Header.propTypes = {
+  classes: PropTypes.object.isRequired
 };
-
-const { title, preview } = content;
-
-const Header = ({ classes }: Props) => (
-  <header className={classes.container}>
-    <div className={classes.navContainer}>
-      <div className={classes.navigation}>
-        <Navigation />
-      </div>
-      <Button className={classes.preview} variant="outlined" color="secondary" href="https://www.loudflow.app">
-        {preview}
-      </Button>
-    </div>
-    <Link to='/' className={classes.brand}>
-      <img src={logo} className={classes.logo} alt='logo' />
-    </Link>
-  </header>
-);
 
 export default withStyles(styles)(Header);

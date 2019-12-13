@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/styles';
-import { Header, Footer, Subscription } from 'components';
+import { Header, Footer, Subscription } from '../../components';
 import styles from './style';
 require('typeface-roboto');
 

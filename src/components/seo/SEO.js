@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import useSiteMetadata from './useSiteMetadata';
 
-function SEO({ description, lang, meta, title }) {
+const SEO = ({ description, lang, meta, title }) => {
     const siteMetadata = useSiteMetadata();
     const metaDescription = description || siteMetadata.description;
     return (
@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         ].concat(meta)}
       />
     );
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,

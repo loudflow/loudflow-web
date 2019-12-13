@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Layout, SEO } from 'components';
-import { Who } from 'containers';
+import { Layout, SEO } from '../components';
+import { Who } from '../containers';
 
 const WhoPage = () => (
   <Layout>

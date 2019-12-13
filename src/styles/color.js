@@ -4,8 +4,7 @@ const fade = (hex, opacity) => {
   const g = parseInt(hex.substring(2, 4), 16);
   const b = parseInt(hex.substring(4, 6), 16);
 
-  const result = `rgba(${r},${g},${b},${opacity ? opacity : 1})`;
-  return result;
+  return `rgba(${r},${g},${b},${opacity ? opacity : 1})`;
 };
 
 const color = {

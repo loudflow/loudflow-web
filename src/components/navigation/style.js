@@ -1,4 +1,4 @@
-const styles = ({ palette, typography }) => ({
+const styles = () => ({
   container: {
     display: 'flex',
     flexDirection: 'row',
