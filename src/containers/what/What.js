@@ -1,49 +1,56 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import PropTypes from 'prop-types';
+import { Grid, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
-
 import styles from './style';
-import content from './content';
-import Grid from '@material-ui/core/Grid';
 
-const { title1, title2, title3, title4, caption, description } = content;
+class What extends React.Component {
 
-type Props = {
-  classes: Object,
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <Grid container spacing={1}>
+        <Grid container item direction="column" xs={12} md={6}>
+          <div className={classes.banner}/>
+        </Grid>
+        <Grid container item direction="column" xs={12} md={6}>
+          <div className={classes.titleContainer}>
+            <Typography variant='h2' color='textSecondary'>
+              Open source
+            </Typography>
+            <Typography variant='h2' color='textSecondary'>
+              cloud platform
+            </Typography>
+            <Typography variant='h2' color='textSecondary'>
+              for building
+            </Typography>
+            <Typography variant='h2' color='textSecondary'>
+              intelligent worlds.
+            </Typography>
+          </div>
+          <div className={classes.captionContainer}>
+            <Typography variant='h5' color='textPrimary'>
+              Lorem ipsum dolor sit amet.
+            </Typography>
+          </div>
+          <div className={classes.contentContainer}>
+            <Typography variant='p' color='textPrimary'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Typography>
+          </div>
+        </Grid>
+      </Grid>
+    );
+  }
+
+}
+
+What.propTypes = {
+  classes: PropTypes.object.isRequired
 };
-
-const What = ({ classes }: Props) => (
-  <Grid container spacing={1}>
-    <Grid container item direction="column" xs={12} md={6}>
-      <div className={classes.banner}/>
-    </Grid>
-    <Grid container item direction="column" xs={12} md={6}>
-      <div className={classes.titleContainer}>
-        <Typography variant='h2' color='textSecondary'>
-          {title1}
-        </Typography>
-        <Typography variant='h2' color='textSecondary'>
-          {title2}
-        </Typography>
-        <Typography variant='h2' color='textSecondary'>
-          {title3}
-        </Typography>
-        <Typography variant='h2' color='textSecondary'>
-          {title4}
-        </Typography>
-      </div>
-      <div className={classes.captionContainer}>
-        <Typography variant='h5' color='textPrimary'>
-          {caption}
-        </Typography>
-      </div>
-      <div className={classes.contentContainer}>
-        <Typography variant='p' color='textPrimary'>
-          {description}
-        </Typography>
-      </div>
-    </Grid>
-  </Grid>
-);
 
 export default withStyles(styles)(What);
