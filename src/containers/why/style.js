@@ -2,10 +2,9 @@ const styles = ({ typography }) => ({
   content: {
   },
   banner: {
-    maxHeight: '50vh',
+    minHeight: `${typography.pxToRem(480)}`,
     height: `calc(100vh - ${typography.pxToRem(465)})`,
     margin: `${typography.pxToRem(20)}`,
-    backgroundImage: "url('/images/solution-machine.png')",
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top left',
     backgroundSize: 'contain'

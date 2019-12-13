@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `loudflow`,
-    description: `Loudflow Web Application`,
+    description: `Loudflow Web Site`,
     author: `FarSimple Oy`,
   },
   plugins: [
@@ -16,11 +16,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-material-ui`,
-      options: {
-        // stylesProvider: {
-        //   injectFirst: true,
-        // },
-      },
+      options: {},
     },
     {
       resolve: 'gatsby-plugin-module-resolver',
@@ -43,20 +39,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `loudflow-web`,
-        short_name: `loudflow-web`,
+        name: `loudflow`,
+        short_name: `loudflow`,
         start_url: `/what/`,
-        background_color: `black`,
-        theme_color: `black`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`,
+        icon: `src/images/logo/logo-orange.png`,
       },
     },
     {

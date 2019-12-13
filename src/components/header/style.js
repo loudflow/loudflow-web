@@ -1,4 +1,9 @@
 const styles = ({ app, typography }) => ({
+  root: {
+    background: 'transparent',
+    boxShadow: 'none',
+    color: 'black',
+  },
   container: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -13,9 +18,6 @@ const styles = ({ app, typography }) => ({
     float: 'right',
     transition: 'all .3s',
     textDecoration: 'none',
-  },
-  logo: {
-    height: `${typography.pxToRem(120)}`,
   },
   navContainer: {
     float: 'left',

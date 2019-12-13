@@ -1,35 +1,26 @@
+import Link from 'gatsby-link';
+
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+
 import { withStyles } from '@material-ui/styles';
 import styles from './style';
 
-class MainNavigation extends React.Component {
+const MainNavigation = ({ classes, options }) => {
 
-  constructor(props) {
-    super(props);
-  }
+  return (
+    <ul className={classes.listContainer}>
+      {options.map((link, i) => (
+        <li className={classes.menuContainer} key={i}>
+          <Link className={classes.navLink} activeClassName={classes.navLinkActive} to={link.to} exact={'true'} >
+            {link.text}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 
-  render() {
-    const { classes, options } = this.props;
-    return (
-      <ul className={classes.listContainer}>
-        {options.map((link, i) => (
-          <li className={classes.menuContainer} key={i}>
-            <Link
-              to={link.to}
-              className={classes.navLink}
-              activeClassName={classes.navLinkActive}
-              exact={'true'}>
-              <span>{link.text}</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    );
-  }
-
-}
+};
 
 MainNavigation.propTypes = {
   classes: PropTypes.object.isRequired,

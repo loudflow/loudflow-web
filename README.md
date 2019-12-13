@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="loudflow" src="src/images/logo.png" width="60" />
+  <img alt="loudflow" src="src/images/logo/logo-black.png" width="60" />
 </p>
 <h1 align="center">
   loudflow-web

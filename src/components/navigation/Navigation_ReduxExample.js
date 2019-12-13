@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { withWidth } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import styles from './style';
+
 import MainNavigation from './main';
 import MobileNavigation from './mobile';
 import { compose, isMobileView } from '../../utils';

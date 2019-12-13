@@ -1,31 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { withStyles } from '@material-ui/styles';
-import { Header, Footer, Subscription } from '../../components';
 import styles from './style';
+
+import { Header, Footer, Subscription } from '../../components';
+
 require('typeface-roboto');
 
-class Layout extends React.Component {
+const Layout = ({ classes, children, hideSubscription }) => {
 
-  constructor(props) {
-    super(props);
-  }
+  return (
+    <div className={classes.container}>
+      <Header />
+      <main className={classes.content}>
+        {children}
+        {!hideSubscription && (<Subscription />)}
+      </main>
+      <Footer />
+    </div>
+  );
 
-  render() {
-    const { classes, children, hideSubscription } = this.props;
-    return (
-      <div className={classes.container}>
-        <Header />
-        <main className={classes.content}>
-          {children}
-          {!hideSubscription && (<Subscription />)}
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
-}
+};
 
 Layout.propTypes = {
   classes: PropTypes.object.isRequired,
