@@ -30,26 +30,28 @@ const When = ({ classes }) => {
         <BackgroundImage Tag="div" className={classes.banner} fluid={bannerImage.file.childImageSharp.fluid} />
       </Grid>
       <Grid container item direction="column" xs={12} md={6}>
-        <div className={classes.titleContainer}>
-          <Typography variant='h2' color='textSecondary'>
-            Setting out
-          </Typography>
-          <Typography variant='h2' color='textSecondary'>
-            on a journey
-          </Typography>
-        </div>
-        <div className={classes.captionContainer}>
-          <Typography variant='h5' color='textPrimary'>
-            Using an iterative approach <br/> for developing Loudflow.
-          </Typography>
-        </div>
-        <div className={classes.contentContainer}>
-          <Typography variant='p' color='textPrimary' paragraph>
-            Starting with an initial skeleton implementation of the front-end web application and back-end services, development will continue in iterations which add on to the previous set of features to produce a new enhanced and stable release. These iterative releases will be documented as milestones here and in the project's Github repository with corresponding list of features and a rough timeline.
-          </Typography>
-          <Typography variant='p' color='textPrimary' paragraph>
-            This approach fits well with the exploratory research and learning goals of the project.
-          </Typography>
+        <div className={classes.container}>
+          <div className={classes.titleContainer}>
+            <Typography variant='h2' color='textSecondary'>
+              Setting out
+            </Typography>
+            <Typography variant='h2' color='textSecondary'>
+              on a journey
+            </Typography>
+          </div>
+          <div className={classes.captionContainer}>
+            <Typography variant='h5' color='textPrimary'>
+              Using an iterative approach <br/> for developing Loudflow.
+            </Typography>
+          </div>
+          <div className={classes.contentContainer}>
+            <Typography variant='p' color='textPrimary' paragraph>
+              Starting with an initial skeleton implementation of the front-end web application and back-end services, development will continue in iterations which add on to the previous set of features to produce a new enhanced and stable release. These iterative releases will be documented as milestones here and in the project's Github repository with corresponding list of features and a rough timeline.
+            </Typography>
+            <Typography variant='p' color='textPrimary' paragraph>
+              This approach fits well with the exploratory research and learning goals of the project.
+            </Typography>
+          </div>
         </div>
       </Grid>
       <Grid container item direction="column" xs={12}>

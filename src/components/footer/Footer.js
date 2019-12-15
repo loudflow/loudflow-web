@@ -1,5 +1,3 @@
-import { Link as GatsbyLink } from 'gatsby';
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -16,7 +14,7 @@ const Footer = ({ classes }) => {
         © 2019,&nbsp;<Link href='https://www.farsimple.com'>FarSimple Oy</Link>. All rights reserved.
       </Typography>
       <Typography className={classes.privacy} variant='p' color='textPrimary'>
-        <GatsbyLink className={classes.privacyLink} to="/privacy/">Privacy Policy</GatsbyLink>
+        <Link href='/privacy/'>Privacy Policy</Link>
       </Typography>
       <Typography className={classes.source} variant='p' color='textPrimary'>
         <FaGithub className={classes.sourceIcon} />&nbsp;&nbsp;<Link className={classes.sourceLink} href='https://www.github.com/loudflow'>Source Code</Link>

@@ -1,12 +1,12 @@
-const styles = ({ app, typography }) => ({
+const styles = ({ app, palette }) => ({
   container: {
     display: 'flex',
     alignItems: 'center',
-    margin: `0 auto ${typography.pxToRem(10)}`,
+    margin: '0 auto',
     maxWidth: app.maxWidth,
     width: '100%',
-    height: `${typography.pxToRem(75)}`,
-    padding: `${typography.pxToRem(40)} 0 ${typography.pxToRem(10)}`,
+    height: '100px',
+    padding: '40px 0 10px',
   },
   copyright: {
     flexGrow: 1,
@@ -18,6 +18,8 @@ const styles = ({ app, typography }) => ({
   privacyLink: {
     display: 'flex',
     alignItems: 'center',
+    color: palette.text.primary,
+    textDecoration: 'none',
   },
   source: {
     display: 'flex',
@@ -27,8 +29,8 @@ const styles = ({ app, typography }) => ({
     alignItems: 'center',
   },
   sourceIcon: {
-    width: `${typography.pxToRem(24)}`,
-    height: `${typography.pxToRem(24)}`,
+    width: '24px',
+    height: '24px',
   },
 });
 

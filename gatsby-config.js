@@ -52,16 +52,5 @@ module.exports = {
         icon: `src/images/logo/logo-orange.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-react-redux`,
-      options: {
-        pathToCreateStoreModule: "./src/state/store",
-        serialize: {
-          space: 0,
-          isJSON: true,
-          unsafe: false,
-        },
-      },
-    }
   ]
 };

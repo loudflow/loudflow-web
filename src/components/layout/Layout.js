@@ -12,12 +12,12 @@ const Layout = ({ classes, children, hideSubscription }) => {
 
   return (
     <div className={classes.container}>
-      <Header />
       <main className={classes.content}>
+        <Header />
         {children}
         {!hideSubscription && (<Subscription />)}
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 

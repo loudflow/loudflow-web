@@ -1,21 +1,22 @@
-const styles = ({ typography }) => ({
+const styles = () => ({
   content: {
   },
   banner: {
-    minHeight: `${typography.pxToRem(240)}`,
+    minHeight: '240px',
+    maxHeight: '480px',
     height: '40vh',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top center',
     backgroundSize: 'contain'
   },
   titleContainer: {
-    marginTop: `${typography.pxToRem(20)}`,
+    marginTop: '20px',
   },
   captionContainer: {
-    marginTop: `${typography.pxToRem(20)}`,
+    marginTop: '20px',
   },
   contentContainer: {
-    marginTop: `${typography.pxToRem(20)}`,
+    marginTop: '20px',
   },
 });
 

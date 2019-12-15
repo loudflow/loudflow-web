@@ -1,25 +1,24 @@
-const styles = ({ typography }) => ({
-  content: {
+const styles = () => ({
+  container: {
+    float: 'right',
+    marginTop: '40px',
+    marginLeft: '40px',
   },
   banner: {
-    minHeight: `${typography.pxToRem(480)}`,
-    height: `calc(100vh - ${typography.pxToRem(465)})`,
-    margin: `${typography.pxToRem(20)}`,
+    minHeight: '480px',
+    maxHeight: '720px',
+    height: `calc(100vh - 450px)`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top left',
-    backgroundSize: 'contain'
+    backgroundSize: 'contain',
   },
   titleContainer: {
-    float: 'right',
-    marginTop: `${typography.pxToRem(20)}`,
   },
   captionContainer: {
-    float: 'right',
-    marginTop: `${typography.pxToRem(20)}`,
+    marginTop: '20px',
   },
   contentContainer: {
-    float: 'right',
-    marginTop: `${typography.pxToRem(20)}`,
+    marginTop: '20px',
   },
 });
 

@@ -1,8 +1,8 @@
 const styles = ({ typography }) => ({
   container: {
     width: '100%',
-    minHeight: `${typography.pxToRem(100)}`,
-    marginTop: `${typography.pxToRem(40)}`,
+    minHeight: '150px',
+    paddingTop: '40px',
   },
 });
 

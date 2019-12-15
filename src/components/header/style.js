@@ -1,36 +1,67 @@
-const styles = ({ app, typography }) => ({
-  root: {
+const styles = ({ app, palette }) => ({
+  header: {
+    width: '100%',
+    maxWidth: app.maxWidth,
+    height: '200px',
+    paddingTop: '20px',
+    paddingBottom: '60px',
+  },
+  appbar: {
     background: 'transparent',
     boxShadow: 'none',
     color: 'black',
   },
-  container: {
+  toolbar: {
     display: 'flex',
-    justifyContent: 'space-between',
+    flexDirection: 'row',
     alignItems: 'flex-end',
-    margin: `0 auto 0`,
-    maxWidth: app.maxWidth,
-    width: '100%',
-    height: `${typography.pxToRem(150)}`,
-  },
-  brand: {
-    border: 'none',
-    float: 'right',
-    transition: 'all .3s',
-    textDecoration: 'none',
+    justifyContent: 'space-between',
+    padding: 0,
   },
   navContainer: {
-    float: 'left',
-    position: 'relative',
+    flexGrow: 1,
+    margin: 0,
+    padding: 0
   },
-  navigation: {
-    float: 'left',
-    position: 'relative',
+  navLinkContainer: {
+    display: 'inline-block',
+    borderRadius: '4px',
+  },
+  navLink: {
+    border: 'none',
+    display: 'inline-block',
+    marginRight: '8px',
+    padding: `4px`,
+    textDecoration: 'none',
+    color: palette.text.primary,
+    "&:hover": {
+      backgroundColor: '#ebebeb',
+    }
+  },
+  navLinkActive: {
+    borderBottom: `2px solid ${palette.primary.main}`,
   },
   preview: {
-    float: 'right',
-    marginLeft: `${typography.pxToRem(40)}`,
-    position: 'relative',
+    marginLeft: '20px',
+  },
+  brand: {
+    display: 'block',
+    height: '120px',
+  },
+  menuButton: {
+  },
+  drawerPaper: {
+    width: '240px',
+  },
+  listLink: {
+    border: 'none',
+    textDecoration: 'none',
+    color: palette.text.primary,
+  },
+  listLinkActive: {
+    "& .listItem": {
+      backgroundColor: palette.action.selected,
+    }
   },
 });
 
