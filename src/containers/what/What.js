@@ -12,7 +12,7 @@ const What = ({ classes }) => {
 
   const bannerImage = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "images/banner/head-machine.png" }) {
+      file(relativePath: { eq: "images/banner/process-machine.png" }) {
         childImageSharp {
           fluid(maxHeight: 1000, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -23,36 +23,25 @@ const What = ({ classes }) => {
   `);
 
   return (
-    <Grid container spacing={1}>
-      <Grid container item direction="column" xs={12} md={6}>
+    <Grid container spacing={1} className={classes.content}>
+      <Grid container item direction="column">
         <BackgroundImage Tag="div" className={classes.banner} fluid={bannerImage.file.childImageSharp.fluid} />
       </Grid>
-      <Grid container item direction="column" xs={12} md={6}>
-        <div className={classes.container}>
-          <div className={classes.titleContainer}>
-            <Typography variant='h2' color='textSecondary'>
-              Open source
-            </Typography>
-            <Typography variant='h2' color='textSecondary'>
-              cloud platform
-            </Typography>
-            <Typography variant='h2' color='textSecondary'>
-              for building
-            </Typography>
-            <Typography variant='h2' color='textSecondary'>
-              intelligent worlds.
-            </Typography>
-          </div>
-          <div className={classes.captionContainer}>
-            <Typography variant='h5' color='textPrimary'>
-              Lorem ipsum dolor sit amet.
-            </Typography>
-          </div>
-          <div className={classes.contentContainer}>
-            <Typography variant='p' color='textPrimary'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </div>
+      <Grid container item direction="column">
+        <div className={classes.titleContainer}>
+          <Typography variant='h2' color='textSecondary'>
+            Building intelligent worlds...
+          </Typography>
+        </div>
+        <div className={classes.captionContainer}>
+          <Typography variant='h5' color='textPrimary'>
+            An open-source cloud platform for exploring cognitive architectures in distributed AI.
+          </Typography>
+        </div>
+        <div className={classes.contentContainer}>
+          <Typography variant='p' color='textPrimary'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </Typography>
         </div>
       </Grid>
     </Grid>

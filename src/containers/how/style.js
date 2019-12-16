@@ -1,16 +1,18 @@
 const styles = () => ({
-  content: {
+  container: {
+    float: 'right',
+    marginTop: '40px',
+    marginLeft: '40px',
   },
   banner: {
-    minHeight: '240px',
-    maxHeight: '480px',
-    height: '40vh',
+    minHeight: '480px',
+    maxHeight: '720px',
+    height: `calc(100vh - 450px)`,
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'top center',
-    backgroundSize: 'contain'
+    backgroundPosition: 'top left',
+    backgroundSize: 'contain',
   },
   titleContainer: {
-    marginTop: '20px',
   },
   captionContainer: {
     marginTop: '20px',
